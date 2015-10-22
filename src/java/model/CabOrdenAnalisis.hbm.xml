@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.CabOrdenAnalisis" table="cab_orden_analisis" schema="public" optimistic-lock="version">
+        <id name="idCabOrdenAnalisis" type="int">
+            <column name="id_cab_orden_analisis" />
+            <generator class="assigned" />
+        </id>
+        <property name="fechaRegistroanalisis" type="date">
+            <column name="fecha_registroanalisis" length="13" />
+        </property>
+        <property name="horaRegistroanalisis" type="time">
+            <column name="hora_registroanalisis" length="15" />
+        </property>
+        <property name="estadoRegistroanalisis" type="string">
+            <column name="estado_registroanalisis" />
+        </property>
+        <property name="documentoPaciente" type="string">
+            <column name="documento_paciente" />
+        </property>
+        <property name="idLaboratorio" type="java.lang.Integer">
+            <column name="id_laboratorio" />
+        </property>
+        <property name="idRegistroconsulta" type="java.lang.Integer">
+            <column name="id_registroconsulta" />
+        </property>
+    </class>
+</hibernate-mapping>

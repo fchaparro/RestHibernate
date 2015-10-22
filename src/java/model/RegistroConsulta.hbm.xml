@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.RegistroConsulta" table="registro_consulta" schema="public" optimistic-lock="version">
+        <id name="idRegistroconsulta" type="int">
+            <column name="id_registroconsulta" />
+            <generator class="assigned" />
+        </id>
+        <property name="estado" type="string">
+            <column name="estado" />
+        </property>
+        <property name="cintura" type="string">
+            <column name="cintura" length="25" />
+        </property>
+        <property name="presion" type="string">
+            <column name="presion" length="18" />
+        </property>
+        <property name="estatura" type="string">
+            <column name="estatura" length="10" />
+        </property>
+        <property name="peso" type="string">
+            <column name="peso" length="18" />
+        </property>
+        <property name="horaConsulta" type="string">
+            <column name="hora_consulta" />
+        </property>
+        <property name="fechaConsulta" type="string">
+            <column name="fecha_consulta" length="18" />
+        </property>
+        <property name="idPaciente" type="java.lang.Integer">
+            <column name="id_paciente" />
+        </property>
+        <property name="idPersonal" type="java.lang.Integer">
+            <column name="id_personal" />
+        </property>
+        <property name="idConsultorio" type="java.lang.Integer">
+            <column name="id_consultorio" />
+        </property>
+    </class>
+</hibernate-mapping>

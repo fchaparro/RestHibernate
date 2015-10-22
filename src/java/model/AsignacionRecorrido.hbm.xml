@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.AsignacionRecorrido" table="asignacion_recorrido" schema="public" optimistic-lock="version">
+        <id name="idAsignacion" type="int">
+            <column name="id_asignacion" />
+            <generator class="assigned" />
+        </id>
+        <property name="puntoA" type="string">
+            <column name="puntoA" length="100" />
+        </property>
+        <property name="puntoB" type="string">
+            <column name="puntoB" length="100" />
+        </property>
+        <property name="puntoC" type="string">
+            <column name="puntoC" length="100" />
+        </property>
+        <property name="puntoD" type="string">
+            <column name="puntoD" length="100" />
+        </property>
+        <property name="fecha" type="string">
+            <column name="fecha" />
+        </property>
+        <property name="latitud" type="string">
+            <column name="latitud" length="25" />
+        </property>
+        <property name="longitud" type="string">
+            <column name="longitud" length="25" />
+        </property>
+        <property name="idGrupoAps" type="java.lang.Integer">
+            <column name="id_grupo_aps" />
+        </property>
+    </class>
+</hibernate-mapping>

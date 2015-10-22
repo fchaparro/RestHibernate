@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.PromocionSalud" table="promocion_salud" schema="public" optimistic-lock="version">
+        <id name="idPromocion" type="int">
+            <column name="id_promocion" />
+            <generator class="assigned" />
+        </id>
+        <property name="horaInicio" type="string">
+            <column name="hora_inicio" />
+        </property>
+        <property name="fechaPromocion" type="string">
+            <column name="fecha_promocion" />
+        </property>
+        <property name="lugarPromocion" type="string">
+            <column name="lugar_promocion" />
+        </property>
+        <property name="temaPromocion" type="string">
+            <column name="tema_promocion" />
+        </property>
+        <property name="duracionPromocion" type="string">
+            <column name="duracion_promocion" />
+        </property>
+        <property name="idCentro" type="java.lang.Integer">
+            <column name="id_centro" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Usuario" table="usuario" schema="public" optimistic-lock="version">
+        <id name="idUsuario" type="int">
+            <column name="id_usuario" />
+            <generator class="assigned" />
+        </id>
+        <property name="nivel" type="string">
+            <column name="nivel" length="10" />
+        </property>
+        <property name="usuario" type="string">
+            <column name="usuario" length="10" not-null="true" />
+        </property>
+        <property name="contrasenha" type="string">
+            <column name="contrasenha" length="10" />
+        </property>
+        <property name="idPersonal" type="java.lang.Integer">
+            <column name="id_personal" />
+        </property>
+    </class>
+</hibernate-mapping>

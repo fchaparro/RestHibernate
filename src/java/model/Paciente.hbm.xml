@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Paciente" table="paciente" schema="public" optimistic-lock="version">
+        <id name="idPaciente" type="int">
+            <column name="id_paciente" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombresPaciente" type="string">
+            <column name="nombres_paciente" length="40" not-null="true" />
+        </property>
+        <property name="apellidosPaciente" type="string">
+            <column name="apellidos_paciente" />
+        </property>
+        <property name="documentoPaciente" type="java.lang.Integer">
+            <column name="documento_paciente" />
+        </property>
+        <property name="nacimientoPaciente" type="string">
+            <column name="nacimiento_paciente" length="25" not-null="true" />
+        </property>
+        <property name="edadPaciente" type="java.lang.Integer">
+            <column name="edad_paciente" />
+        </property>
+        <property name="telefonoPaciente" type="string">
+            <column name="telefono_paciente" length="25" />
+        </property>
+        <property name="emailPaciente" type="string">
+            <column name="email_paciente" length="30" />
+        </property>
+        <property name="latitud" type="string">
+            <column name="latitud" length="25" />
+        </property>
+        <property name="longitud" type="string">
+            <column name="longitud" length="25" />
+        </property>
+        <property name="idBarrio" type="java.lang.Integer">
+            <column name="id_barrio" />
+        </property>
+        <property name="idSexo" type="java.lang.Integer">
+            <column name="id_sexo" />
+        </property>
+        <property name="idSangre" type="java.lang.Integer">
+            <column name="id_sangre" />
+        </property>
+        <property name="idNacionalidad" type="java.lang.Integer">
+            <column name="id_nacionalidad" />
+        </property>
+    </class>
+</hibernate-mapping>

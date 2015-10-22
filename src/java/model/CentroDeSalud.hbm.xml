@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.CentroDeSalud" table="centro_de_salud" schema="public" optimistic-lock="version">
+        <id name="idCentro" type="int">
+            <column name="id_centro" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreCentro" type="string">
+            <column name="nombre_centro" length="25" not-null="true" />
+        </property>
+        <property name="emailCentro" type="string">
+            <column name="email_centro" length="30" />
+        </property>
+        <property name="telefonoCentro" type="string">
+            <column name="telefono_centro" length="30" />
+        </property>
+        <property name="direccionCentro" type="string">
+            <column name="direccion_centro" length="30" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

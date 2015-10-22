@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/prueba2</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">fredy12345</property>
+    <mapping resource="model/Ciudad.hbm.xml"/>
+    <mapping resource="model/HistorialPaciente.hbm.xml"/>
+    <mapping resource="model/CabResultadoAnalisis.hbm.xml"/>
+    <mapping resource="model/Usuario.hbm.xml"/>
+    <mapping resource="model/InsumoFarmaceutico.hbm.xml"/>
+    <mapping resource="model/Paises.hbm.xml"/>
+    <mapping resource="model/Nacionalidad.hbm.xml"/>
+    <mapping resource="model/RegistroConsulta.hbm.xml"/>
+    <mapping resource="model/Personal.hbm.xml"/>
+    <mapping resource="model/AsignacionRecorrido.hbm.xml"/>
+    <mapping resource="model/Seguimiento.hbm.xml"/>
+    <mapping resource="model/Paciente.hbm.xml"/>
+    <mapping resource="model/Profesion.hbm.xml"/>
+    <mapping resource="model/TipoPersonal.hbm.xml"/>
+    <mapping resource="model/DetalleReceta.hbm.xml"/>
+    <mapping resource="model/GrupoAps.hbm.xml"/>
+    <mapping resource="model/Contacto.hbm.xml"/>
+    <mapping resource="model/CabOrdenAnalisis.hbm.xml"/>
+    <mapping resource="model/CalidadVida.hbm.xml"/>
+    <mapping resource="model/CabInternacion.hbm.xml"/>
+    <mapping resource="model/Cuestionario.hbm.xml"/>
+    <mapping resource="model/Sexo.hbm.xml"/>
+    <mapping resource="model/DetalleGrupoAps.hbm.xml"/>
+    <mapping resource="model/TipoAnalisis.hbm.xml"/>
+    <mapping resource="model/CabSalida.hbm.xml"/>
+    <mapping resource="model/DetalleAsignacion.hbm.xml"/>
+    <mapping resource="model/RecursoInternacion.hbm.xml"/>
+    <mapping resource="model/PromocionSalud.hbm.xml"/>
+    <mapping resource="model/Enfermedades.hbm.xml"/>
+    <mapping resource="model/Consultorio.hbm.xml"/>
+    <mapping resource="model/Receta.hbm.xml"/>
+    <mapping resource="model/InsumoAps.hbm.xml"/>
+    <mapping resource="model/Diagnostico.hbm.xml"/>
+    <mapping resource="model/DetalleOrdenAnalisis.hbm.xml"/>
+    <mapping resource="model/Proveedor.hbm.xml"/>
+    <mapping resource="model/DetalleInternacion.hbm.xml"/>
+    <mapping resource="model/Barrio.hbm.xml"/>
+    <mapping resource="model/DetallePromocion.hbm.xml"/>
+    <mapping resource="model/Alerta.hbm.xml"/>
+    <mapping resource="model/Departamentos.hbm.xml"/>
+    <mapping resource="model/Laboratorio.hbm.xml"/>
+    <mapping resource="model/DetSalida.hbm.xml"/>
+    <mapping resource="model/TipoSangre.hbm.xml"/>
+    <mapping resource="model/DetalleCabResultadoAnalisis.hbm.xml"/>
+    <mapping resource="model/CentroDeSalud.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

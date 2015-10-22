@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.CabSalida" table="cab_salida" schema="public" optimistic-lock="version">
+        <id name="idSalida" type="int">
+            <column name="id_salida" />
+            <generator class="assigned" />
+        </id>
+        <property name="fecha" type="string">
+            <column name="fecha" />
+        </property>
+        <property name="hora" type="string">
+            <column name="hora" />
+        </property>
+        <property name="idPersonal" type="java.lang.Integer">
+            <column name="id_personal" />
+        </property>
+        <property name="idGrupoAps" type="java.lang.Integer">
+            <column name="id_grupo_aps" />
+        </property>
+        <property name="idRegistroconsulta" type="java.lang.Integer">
+            <column name="id_registroconsulta" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Alerta" table="alerta" schema="public" optimistic-lock="version">
+        <id name="idAlerta" type="int">
+            <column name="id_alerta" />
+            <generator class="assigned" />
+        </id>
+        <property name="fechaInicio" type="string">
+            <column name="fecha_inicio" />
+        </property>
+        <property name="fechaLimite" type="string">
+            <column name="fecha_limite" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" length="10" />
+        </property>
+        <property name="cantidadDias" type="java.lang.Integer">
+            <column name="cantidad_dias" />
+        </property>
+        <property name="cantidadEnfermos" type="java.lang.Integer">
+            <column name="cantidad_enfermos" />
+        </property>
+        <property name="idEnfermedades" type="java.lang.Integer">
+            <column name="id_enfermedades" />
+        </property>
+    </class>
+</hibernate-mapping>

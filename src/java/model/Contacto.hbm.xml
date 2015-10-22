@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Contacto" table="contacto" schema="public" optimistic-lock="version">
+        <id name="idContacto" type="int">
+            <column name="id_contacto" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombresContacto" type="string">
+            <column name="nombres_contacto" length="40" not-null="true" />
+        </property>
+        <property name="apellidosContacto" type="string">
+            <column name="apellidos_contacto" />
+        </property>
+        <property name="documentoContacto" type="string">
+            <column name="documento_contacto" />
+        </property>
+        <property name="nacimientoContacto" type="string">
+            <column name="nacimiento_contacto" length="25" not-null="true" />
+        </property>
+        <property name="edadContacto" type="java.lang.Integer">
+            <column name="edad_contacto" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="10" />
+        </property>
+        <property name="telefonoContacto" type="string">
+            <column name="telefono_contacto" length="25" />
+        </property>
+        <property name="parentesco" type="string">
+            <column name="parentesco" />
+        </property>
+        <property name="emailContacto" type="string">
+            <column name="email_contacto" length="30" />
+        </property>
+        <property name="idPaciente" type="java.lang.Integer">
+            <column name="id_paciente" />
+        </property>
+        <property name="idSexo" type="java.lang.Integer">
+            <column name="id_sexo" />
+        </property>
+    </class>
+</hibernate-mapping>

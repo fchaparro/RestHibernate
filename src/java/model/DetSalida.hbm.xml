@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.DetSalida" table="det_salida" schema="public" optimistic-lock="version">
+        <id name="idDet" type="int">
+            <column name="id_det" />
+            <generator class="assigned" />
+        </id>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="cantidad" />
+        </property>
+        <property name="idSalida" type="java.lang.Integer">
+            <column name="id_salida" />
+        </property>
+        <property name="idInsumo" type="java.lang.Integer">
+            <column name="id_insumo" />
+        </property>
+    </class>
+</hibernate-mapping>

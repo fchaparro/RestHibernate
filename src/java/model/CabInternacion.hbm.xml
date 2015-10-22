@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.CabInternacion" table="cab_internacion" schema="public" optimistic-lock="version">
+        <id name="idInternacion" type="int">
+            <column name="id_internacion" />
+            <generator class="assigned" />
+        </id>
+        <property name="horaInternacion" type="string">
+            <column name="hora_internacion" length="10" />
+        </property>
+        <property name="fechaInternacion" type="string">
+            <column name="fecha_internacion" length="10" />
+        </property>
+        <property name="horaAlta" type="string">
+            <column name="hora_alta" length="10" />
+        </property>
+        <property name="fechaAlta" type="string">
+            <column name="fecha_alta" length="10" />
+        </property>
+        <property name="observacionInternacion" type="string">
+            <column name="observacion_internacion" length="225" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" length="10" not-null="true" />
+        </property>
+        <property name="idPaciente" type="java.lang.Integer">
+            <column name="id_paciente" />
+        </property>
+        <property name="idPersonal" type="java.lang.Integer">
+            <column name="id_personal" />
+        </property>
+        <property name="idEnfermedades" type="java.lang.Integer">
+            <column name="id_enfermedades" />
+        </property>
+    </class>
+</hibernate-mapping>

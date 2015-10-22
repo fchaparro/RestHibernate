@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.DetalleCabResultadoAnalisis" table="detalle_cab_resultado_analisis" schema="public" optimistic-lock="version">
+        <id name="idDetalleResultado" type="int">
+            <column name="id_detalle_resultado" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" />
+        </property>
+        <property name="valor" type="string">
+            <column name="valor" />
+        </property>
+        <property name="idCabResultado" type="java.lang.Integer">
+            <column name="id_cab_resultado" />
+        </property>
+        <property name="idTipoanalisis" type="java.lang.Integer">
+            <column name="id_tipoanalisis" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Diagnostico" table="diagnostico" schema="public" optimistic-lock="version">
+        <id name="idDiagnostico" type="int">
+            <column name="id_diagnostico" />
+            <generator class="assigned" />
+        </id>
+        <property name="observacion" type="string">
+            <column name="observacion" />
+        </property>
+        <property name="idRegistroconsulta" type="java.lang.Integer">
+            <column name="id_registroconsulta" />
+        </property>
+        <property name="idEnfermedades" type="java.lang.Integer">
+            <column name="id_enfermedades" />
+        </property>
+    </class>
+</hibernate-mapping>

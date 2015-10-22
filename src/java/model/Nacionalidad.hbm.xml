@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Nacionalidad" table="nacionalidad" schema="public" optimistic-lock="version">
+        <id name="idNacionalidad" type="int">
+            <column name="id_nacionalidad" />
+            <generator class="assigned" />
+        </id>
+        <property name="nacionalidad" type="string">
+            <column name="nacionalidad" length="25" not-null="true" />
+        </property>
+        <property name="tipoDocumento" type="string">
+            <column name="tipo_documento" />
+        </property>
+        <property name="idPais" type="java.lang.Integer">
+            <column name="id_pais" />
+        </property>
+    </class>
+</hibernate-mapping>

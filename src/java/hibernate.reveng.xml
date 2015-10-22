@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="prueba2" match-schema="public"/>
+  <table-filter match-name="usuario"/>
+  <table-filter match-name="asignacion_recorrido"/>
+  <table-filter match-name="paises"/>
+  <table-filter match-name="cab_resultado_analisis"/>
+  <table-filter match-name="calidad_vida"/>
+  <table-filter match-name="grupo_aps"/>
+  <table-filter match-name="departamentos"/>
+  <table-filter match-name="nacionalidad"/>
+  <table-filter match-name="paciente"/>
+  <table-filter match-name="detalle_internacion"/>
+  <table-filter match-name="registro_consulta"/>
+  <table-filter match-name="proveedor"/>
+  <table-filter match-name="insumo_aps"/>
+  <table-filter match-name="consultorio"/>
+  <table-filter match-name="alerta"/>
+  <table-filter match-name="seguimiento"/>
+  <table-filter match-name="cab_salida"/>
+  <table-filter match-name="personal"/>
+  <table-filter match-name="historial_paciente"/>
+  <table-filter match-name="recurso_internacion"/>
+  <table-filter match-name="cab_internacion"/>
+  <table-filter match-name="receta"/>
+  <table-filter match-name="contacto"/>
+  <table-filter match-name="tipo_analisis"/>
+  <table-filter match-name="centro_de_salud"/>
+  <table-filter match-name="laboratorio"/>
+  <table-filter match-name="barrio"/>
+  <table-filter match-name="detalle_orden_analisis"/>
+  <table-filter match-name="det_salida"/>
+  <table-filter match-name="detalle_receta"/>
+  <table-filter match-name="sexo"/>
+  <table-filter match-name="detalle_grupo_aps"/>
+  <table-filter match-name="cab_orden_analisis"/>
+  <table-filter match-name="detalle_asignacion"/>
+  <table-filter match-name="cuestionario"/>
+  <table-filter match-name="diagnostico"/>
+  <table-filter match-name="profesion"/>
+  <table-filter match-name="tipo_personal"/>
+  <table-filter match-name="detalle_cab_resultado_analisis"/>
+  <table-filter match-name="ciudad"/>
+  <table-filter match-name="promocion_salud"/>
+  <table-filter match-name="detalle_promocion"/>
+  <table-filter match-name="enfermedades"/>
+  <table-filter match-name="tipo_sangre"/>
+  <table-filter match-name="insumo_farmaceutico"/>
+</hibernate-reverse-engineering>

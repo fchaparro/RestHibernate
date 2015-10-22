@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Personal" table="personal" schema="public" optimistic-lock="version">
+        <id name="idPersonal" type="int">
+            <column name="id_personal" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombresPersonal" type="string">
+            <column name="nombres_personal" length="50" not-null="true" />
+        </property>
+        <property name="apellidosPersonal" type="string">
+            <column name="apellidos_personal" />
+        </property>
+        <property name="documentoPersonal" type="string">
+            <column name="documento_personal" />
+        </property>
+        <property name="direccionPersonal" type="string">
+            <column name="direccion_personal" length="50" />
+        </property>
+        <property name="nacimientoPersonal" type="string">
+            <column name="nacimiento_personal" length="25" not-null="true" />
+        </property>
+        <property name="edadPersonal" type="java.lang.Integer">
+            <column name="edad_personal" />
+        </property>
+        <property name="emailPersonal" type="string">
+            <column name="email_personal" length="30" />
+        </property>
+        <property name="telefonoPersonal" type="string">
+            <column name="telefono_personal" length="25" />
+        </property>
+        <property name="idCentro" type="java.lang.Integer">
+            <column name="id_centro" />
+        </property>
+        <property name="idProfesion" type="java.lang.Integer">
+            <column name="id_profesion" />
+        </property>
+        <property name="idSexo" type="java.lang.Integer">
+            <column name="id_sexo" />
+        </property>
+        <property name="idNacionalidad" type="java.lang.Integer">
+            <column name="id_nacionalidad" />
+        </property>
+        <property name="idTipopersonal" type="java.lang.Integer">
+            <column name="id_tipopersonal" />
+        </property>
+        <property name="idSangre" type="java.lang.Integer">
+            <column name="id_sangre" />
+        </property>
+        <property name="idBarrio" type="java.lang.Integer">
+            <column name="id_barrio" />
+        </property>
+    </class>
+</hibernate-mapping>

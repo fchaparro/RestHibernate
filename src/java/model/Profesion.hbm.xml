@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Profesion" table="profesion" schema="public" optimistic-lock="version">
+        <id name="idProfesion" type="int">
+            <column name="id_profesion" />
+            <generator class="assigned" />
+        </id>
+        <property name="infinitivo" type="string">
+            <column name="infinitivo" />
+        </property>
+        <property name="profesion" type="string">
+            <column name="profesion" length="25" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.InsumoFarmaceutico" table="insumo_farmaceutico" schema="public" optimistic-lock="version">
+        <id name="idInsumo" type="int">
+            <column name="id_insumo" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreInsumo" type="string">
+            <column name="nombre_insumo" length="25" not-null="true" />
+        </property>
+        <property name="cantidadInsumo" type="int">
+            <column name="cantidad_insumo" not-null="true" />
+        </property>
+        <property name="cantidadinsumoMin" type="int">
+            <column name="cantidadinsumo_min" not-null="true" />
+        </property>
+        <property name="vencimientoInsumo" type="string">
+            <column name="vencimiento_insumo" length="25" not-null="true" />
+        </property>
+        <property name="idProveedor" type="java.lang.Integer">
+            <column name="id_proveedor" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/10/2015 03:30:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Laboratorio" table="laboratorio" schema="public" optimistic-lock="version">
+        <id name="idLaboratorio" type="int">
+            <column name="id_laboratorio" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreLaboratorio" type="string">
+            <column name="nombre_laboratorio" />
+        </property>
+        <property name="direccionLaboratorio" type="string">
+            <column name="direccion_laboratorio" />
+        </property>
+        <property name="telefonoLaboratorio" type="java.lang.Integer">
+            <column name="telefono_laboratorio" />
+        </property>
+        <property name="emailLaboratorio" type="string">
+            <column name="email_laboratorio" />
+        </property>
+    </class>
+</hibernate-mapping>
